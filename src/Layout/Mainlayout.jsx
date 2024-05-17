@@ -6,14 +6,20 @@ import React from 'react'
 //importing About into layout
 import About from '../pages/About'
 
+// importing header into layout
+import Header from '../Components/Header'
+
+// importing footer into layout
+import Footer from '../Components/Footer'
+
 const Mainlayout = ()=>{
     return(
-        <div>
-            <div className='Header'style={{height:'50px',backgroundColor:'beige',}}>
-                Header
-            </div>
-           {/* <Home/> */}
+       
+            <div>
+           <Header/>
            <About/>
+          {/* <Home/>*/}
+           <Footer/>
         </div>
     )
 }
